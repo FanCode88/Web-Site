@@ -20,14 +20,13 @@ nextBtn.onclick = () => {
 
 //slider prev button
 prevBtn.onclick = () => {
-  slides.forEarch((slide) => {
+  slides.forEach((slide) => {
     slide.classList.remove('active');
   });
-
   slideNumber--;
 
   if (slideNumber < 0) {
-    slideNumber = numberOfSlides - 1;
+    slideNumber = numberOfSlides -1;
   }
 
   slides[slideNumber].classList.add('active');
